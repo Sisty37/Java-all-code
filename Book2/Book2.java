@@ -89,19 +89,18 @@ public class Book2 {
     }
     
     
-    void addQuantity(int amount){
+    void addQuantity(int amount)
+    {
 		availableQuantity=availableQuantity+amount;
                  System.out.println("After adding book:"+availableQuantity);
-	}
-    
-    
-    
+    }
    
 	
-	void sellQuantity(int amount){
+    void sellQuantity(int amount)
+    {
 		availableQuantity=availableQuantity-amount;
                 System.out.println("After selling:"+availableQuantity);
-	}
+    }
     
     
     
