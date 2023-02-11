@@ -1,60 +1,65 @@
 
-package Bank_Account;
+package Bank_Account2;
 
-public class Bank_Account
-{
-	private int accountNumber;
-	private String accountHolderName;
-	private double balance;
-
-	public void setAccountNumber(int an)
-	{
-      accountNumber=an;
-	}
+public class Bank_Account2 {
+    
+    private int AccountNumber ;
+    private String HolderName;
+    private int Balance;
+  
+   
+    
+    
+   
+    
+    public void setAccountNumber(int AccountNumber )
+    {
+        this.AccountNumber=AccountNumber;
+    }
     public int getAccountNumber()
-	{
-     return accountNumber;
-	}
-    public void setAccountHolderName(String ahn)
-	{
-		accountHolderName=ahn;
-	}
-	public String getAccountHolderName()
-	{
-		return accountHolderName;
-	}
-	public void setBalance(double b)
-	{
-		balance=b;
-	}
-	public double getBalance()
-	{
-		return balance;
-	}
-	public void deposit(double amount)
+    {
+        return AccountNumber;
+    }
+    
+    public void setHoldername(String HolderName)
+    {
+        this.HolderName=HolderName;
+    }
+    
+    public String getHolderName()
+    {
+        return HolderName;
+    }
+    
+    public void setBalance(int Balance)
+    {
+        this.Balance=Balance;
+    }
+    
+    public int getBalance()
+    {
+        return Balance;
+    }
+    
+      public void deposit(int amount)
       {
-		  setBalance(getBalance() + amount);
-		  System.out.println("Your "+ amount +" taka is successfully deposited!!");
-		  System.out.println("Now your current balance is : "+getBalance()+" taka");
-		  
+           Balance=Balance+amount;
+            System.out.println("Your "+ amount +" taka is successfully deposited!!");
+            System.out.println("Now your current balance is : "+getBalance()+" taka");
       }
-    public  void withdraw(double amount)
+      
+      public void withdraw(int amount)
       {
-		  if (amount > balance)
+           if (amount > Balance)
 		  {
 			  System.out.println("You are not able to withdraw your money!!");
 		  }
 		  else{
-		  setBalance(getBalance() - amount);
+		  Balance=Balance-amount;
 		  System.out.println("Your "+ amount +" taka is successfully withdraw!!");
 		  System.out.println("Now your current balance is : "+getBalance()+" taka");
 		  }
       }
-	public void showDetails()
-	{
-		System.out.println("Account number: "+getAccountNumber());
-		System.out.println("Account Holder Name: "+getAccountHolderName());
-		System.out.println("Account Balance: "+getBalance()+" taka");
-	}
-	
+       
+    
 }
