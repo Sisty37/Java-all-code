@@ -46,15 +46,7 @@ public class StoryBook {
      }
         
 	
-    static void setDiscountRate(double Rate)
-    {
-        discountRate=Rate;
-    }
-   
-    static double  getDiscountRate()
-    {
-        return discountRate;
-    }
+  
     
     void setIsbn(String isbn)
     {
