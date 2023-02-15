@@ -45,15 +45,7 @@ public class TextBook {
      }
         
 	
-    static void setDiscountRate(double Rate)
-    {
-        Rate=discountRate;
-    }
    
-    static double  getDiscountRate()
-    {
-        return discountRate;
-    }
     
     void setIsbn(String isbn)
     {
