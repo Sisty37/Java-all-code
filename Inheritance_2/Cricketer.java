@@ -16,9 +16,7 @@ public class Cricketer extends Player{
 	public Cricketer(String playerType, String totalNumMatches)
 	{
             
-           super.getplayername();
-           super.getplayerage();
-           super.getplayercountry();
+         
 		this.playerType=playerType;
 		this.totalNumMatches=totalNumMatches;
 	}
@@ -32,7 +30,9 @@ public class Cricketer extends Player{
 	
 	public void showcricketerInfo()
 	{
-		
+	        super.getplayername();
+                super.getplayerage();
+                super.getplayercountry();
 		System.out.println("Player Type:"+playerType);
 		System.out.println("Total num of matches:"+totalNumMatches);
 		
