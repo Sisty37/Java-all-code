@@ -8,15 +8,12 @@ public class test {
         Attributes obj=new Attributes();
 	 
 	 obj.setaccountNumber(12);
-	 obj.getaccountNumber();
-	 
-	 
-	  obj.setaccountHolderName("sisty");
-	 obj.getaccountHolderName();
-	 
-	 
+
+	 obj.setaccountHolderName("sisty");
+	
 	 obj.setbalance(10000);
-	 obj.getbalance();
+         
+	 obj.showdata();
     }
     
 }
