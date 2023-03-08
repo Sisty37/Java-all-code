@@ -27,34 +27,34 @@ public class Attributes {
        
    }
       
-      void getaccountNumber()
+      
+      
+      
+      int getaccountNumber()
       {
-          System.out.println("Account number:"+accountNumber);
+        return accountNumber;
       }
       
-       void setaccountHolderName()
+       String setaccountHolderName()
       {
-          System.out.println("Account Holder name:"+accountHolderName);
+           return accountHolderName;
       }
-       void getbalance( )
+      double getbalance( )
    {
       
-       System.out.println("Balance:"+balance);
+        return balance;
    }  
 
-    void getaccountHolderName() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-       
-       
-       
-       
       
-      
+
+     void showdata()  
+     {
+         System.out.println("Account number:"+accountNumber);
+         System.out.println("Account Holder name:"+accountHolderName);
+         System.out.println("Balance:"+balance);
+         
+     }
     
-     
-        
-        
         
     
     
